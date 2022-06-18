@@ -1,0 +1,57 @@
+@import "fontColors";
+
+.contKira{
+    width: 100%;
+    padding: 30px;
+    height: 100%;
+    background: $color_white;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px $color_grayish_blueeClaro;
+    .contKira_campoA{
+        width: 220px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .contKira_campoA_imagen{
+           width: 50px;
+           height: 50px;
+           border-radius: 50%;
+           overflow: hidden;
+           border: 2px solid white;
+        }
+        .contKira_campoA_description{
+           width:150px;
+           .contKira_campoA_description_name{
+               color: $color_grayish_bluee;
+               font-family: 'Barlow Semi Condensed', sans-serif;   //500 600
+               font-weight: 500;
+           }
+           .contKira_campoA_description_graduate{
+                color: $color_grayish_blueeClaro;
+                font-family: 'Barlow Semi Condensed', sans-serif;   //500 600
+                font-weight:500 ;
+           }
+        }
+
+    }
+    .contKira_campoB{
+        margin-top: 20px;
+        width: 100%;
+        padding: 10px 0px;
+        color: $color_grayish_bluee;
+        font-weight: 500;
+        font-size: 27px;
+        z-index: 10;
+        position: relative;
+    }
+    .contKira_campoC{
+        margin-top: 20px;
+        color: $color_violet_claro;
+        z-index: 10;
+        position: relative;
+        font-size: 16px;
+    }
+}

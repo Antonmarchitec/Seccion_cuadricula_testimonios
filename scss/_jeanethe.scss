@@ -1,0 +1,53 @@
+@import "fontColors";
+
+.contJanethe{
+    width: 100%;
+    padding:30px;
+    height: 100%;
+    background:$color_white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px $color_grayish_blueeClaro;
+
+    .contJanethe_campoA{
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .contJanethe_campoA_imagen{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid white;
+        }
+        .contJanethe_campoA_description{
+            //background: ;
+            .contJanethe_campoA_description_name{
+                color: $color_grayish_bluee;
+                font-family: 'Barlow Semi Condensed', sans-serif;   //500 600
+                font-weight: 500;
+            }
+            .contJanethe_campoA_description_graduate{
+                color: $color_grayish_blueeClaro;
+                font-family: 'Barlow Semi Condensed', sans-serif;   //500 600
+                font-weight:500 ;
+            }
+        }
+    }
+    .contJanethe_campoB{
+        width: 250px;
+        margin-top: 20px;
+        padding: 10px 0px;
+        color: $color_grayish_bluee;
+        font-weight: 500;
+        font-size: 27px;
+    }
+    .contJanethe_campoC{
+        margin-top: 20px;
+        color: $color_grayish_blueeClaro;
+        z-index: 10;
+        position: relative;
+        font-size: 16px;
+    }
+}

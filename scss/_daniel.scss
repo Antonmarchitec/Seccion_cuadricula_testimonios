@@ -1,0 +1,140 @@
+@import "fontColors";
+
+.contDaniel{
+    width: 100%;
+    padding: 30px;
+    height: 420px;
+    background: $color_violet;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px $color_grayish_blueeClaro;
+
+    .contDaniel_comillas{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        right: 125px;
+        top: 0px;
+    }
+    .contDaniel_campoA{
+        width: 230px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .contDaniel_campoA_foto{
+           width: 50px;
+           height: 50px;
+           border-radius: 50%;
+           overflow: hidden;
+           border: 2px solid white;
+        }
+        .contDaniel_campoA_description{
+           width:150px;
+           .contDaniel_campoA_description_name{
+               color: $color_gray;
+               font-family: 'Barlow Semi Condensed', sans-serif;   //500 600
+               font-weight: 500;
+           }
+           .contDaniel_campoA_description_desc{
+                color: $color_violet_claro;
+                font-family: 'Barlow Semi Condensed', sans-serif;   //500 600
+                font-weight:500 ;
+           }
+        }
+
+    }
+    .contDaniel_campoB{
+        margin-top: 20px;
+        width: 100%;
+        padding: 10px 0px;
+        color: $color_grayish_blue;
+        font-weight: 500;
+        font-size: 27px;
+        z-index: 10;
+        position: relative;
+    }
+    .contDaniel_campoC{
+        margin-top: 20px;
+        color: $color_violet_claro;
+        z-index: 10;
+        position: relative;
+    }
+}
+
+
+
+
+@media (min-width:320px) and (max-width:423px){
+    .contDaniel{
+        width: 100%;
+        padding: 50px 30px;
+        height: 100%;
+        background: $color_violet;
+        position:relative;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 2px $color_grayish_blueeClaro;
+    
+        .contDaniel_comillas{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            right: 30px;
+            top: 0px;
+            z-index: 0;
+        }
+        .contDaniel_campoA{
+            width: 220px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            .contDaniel_campoA_foto{
+               width: 50px;
+               height: 50px;
+               border-radius: 50%;
+               overflow: hidden;
+               border: 2px solid white;
+            }
+            .contDaniel_campoA_description{
+               width:150px;
+               z-index: 100;
+               .contDaniel_campoA_description_name{
+                   color: $color_gray;
+                   font-family: 'Barlow Semi Condensed', sans-serif;   //500 600
+                   font-weight: 500;
+               }
+               .contDaniel_campoA_description_desc{
+                    color: $color_violet_claro;
+                    font-family: 'Barlow Semi Condensed', sans-serif;   //500 600
+                    font-weight:500 ;
+               }
+            }
+    
+        }
+        .contDaniel_campoB{
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px 0px;
+            color: $color_grayish_blue;
+            font-weight: 500;
+            font-size: 27px;
+            z-index: 10;
+            position: relative;
+        }
+        .contDaniel_campoC{
+            margin-top: 20px;
+            color: $color_violet_claro;
+            z-index: 10;
+            position: relative;
+            font-size: 16px;
+        }
+    }   
+    
+    
+
+
+
+}

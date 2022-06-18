@@ -1,0 +1,108 @@
+@import "fontColors";
+
+.contJonatan{
+    width: 100%;
+    padding:30px;
+    height: 420px;
+    background:$color_grayish_bluee;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px $color_grayish_blueeClaro;
+
+    .contJonatan_campoA{
+        width: 275px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .contJonatan_campoA_imagen{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid white;
+        }
+        .contJonatan_campoA_description{
+            //background: ;
+            .contJonatan_campoA_description_name{
+                color: $color_gray;
+                font-family: 'Barlow Semi Condensed', sans-serif;   //500 600
+                font-weight: 500;
+            }
+            .contJonatan_campoA_description_graduate{
+                color: $color_violet_claro;
+                font-family: 'Barlow Semi Condensed', sans-serif;   //500 600
+                font-weight:500 ;
+            }
+        }
+    }
+    .contJonatan_campoB{
+        margin-top: 20px;
+        width: 100%;
+        padding: 10px 0px;
+        color: $color_grayish_blue;
+        font-weight: 500;
+        font-size: 27px;
+    }
+    .contJonatan_campoC{
+        margin-top: 20px;
+        color: $color_grayish_blueeClaro;
+        z-index: 10;
+        position: relative;
+    }
+}
+
+
+@media (min-width:320px) and (max-width:423px){
+    .contJonatan{
+        width: 100%;
+        padding:30px;
+        height: 100%;
+        background:$color_grayish_bluee;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 2px $color_grayish_blueeClaro;
+    
+        .contJonatan_campoA{
+            width: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .contJonatan_campoA_imagen{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                overflow: hidden;
+                border: 2px solid white;
+            }
+            .contJonatan_campoA_description{
+                //background: ;
+                .contJonatan_campoA_description_name{
+                    color: $color_gray;
+                    font-family: 'Barlow Semi Condensed', sans-serif;   //500 600
+                    font-weight: 500;
+                }
+                .contJonatan_campoA_description_graduate{
+                    color: $color_violet_claro;
+                    font-family: 'Barlow Semi Condensed', sans-serif;   //500 600
+                    font-weight:500 ;
+                }
+            }
+        }
+        .contJonatan_campoB{
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px 0px;
+            color: $color_grayish_blue;
+            font-weight: 500;
+            font-size: 27px;
+        }
+        .contJonatan_campoC{
+            margin-top: 20px;
+            color: $color_grayish_blueeClaro;
+            z-index: 10;
+            position: relative;
+            font-size: 16px;
+        }
+    }
+    
+}

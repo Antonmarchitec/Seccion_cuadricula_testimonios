@@ -1,0 +1,503 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+html, body {
+  font-size: 18px;
+}
+
+.container_base {
+  width: 100%;
+  padding: 40px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(0deg, 0%, 81%);
+}
+.container_base .grid_container {
+  width: 100%;
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 1.5em;
+  grid-template-areas: "grid_daniel   grid_daniel   grid_jonhatan   grid_kira" "grid_jeanette grid_patrick grid_patrick grid_kira";
+}
+.container_base .grid_container .grid_daniel {
+  grid-area: grid_daniel;
+}
+.container_base .grid_container .grid_jonhatan {
+  grid-area: grid_jonhatan;
+}
+.container_base .grid_container .grid_kira {
+  grid-area: grid_kira;
+}
+.container_base .grid_container .grid_jeanette {
+  grid-area: grid_jeanette;
+}
+.container_base .grid_container .grid_patrick {
+  grid-area: grid_patrick;
+}
+
+@media (min-width: 320px) and (max-width: 423px) {
+  html, body {
+    font-size: 13px;
+  }
+
+  .container_base {
+    width: 100%;
+    max-width: initial;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(0deg, 0%, 81%);
+  }
+  .container_base .grid_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 1.8em;
+    grid-template-areas: "grid_daniel     grid_daniel" "grid_jonhatan   grid_jonhatan" "grid_jeanette   grid_jeanette" "grid_patrick    grid_patrick" "grid_kira       grid_kira";
+  }
+}
+.contDaniel {
+  width: 100%;
+  padding: 30px;
+  height: 420px;
+  background: hsl(263deg, 55%, 52%);
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px hsl(217deg, 20%, 63%);
+}
+.contDaniel .contDaniel_comillas {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 125px;
+  top: 0px;
+}
+.contDaniel .contDaniel_campoA {
+  width: 230px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.contDaniel .contDaniel_campoA .contDaniel_campoA_foto {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid white;
+}
+.contDaniel .contDaniel_campoA .contDaniel_campoA_description {
+  width: 150px;
+}
+.contDaniel .contDaniel_campoA .contDaniel_campoA_description .contDaniel_campoA_description_name {
+  color: hsl(0deg, 0%, 81%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+}
+.contDaniel .contDaniel_campoA .contDaniel_campoA_description .contDaniel_campoA_description_desc {
+  color: hsl(264deg, 44%, 71%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+}
+.contDaniel .contDaniel_campoB {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px 0px;
+  color: hsl(210deg, 46%, 95%);
+  font-weight: 500;
+  font-size: 27px;
+  z-index: 10;
+  position: relative;
+}
+.contDaniel .contDaniel_campoC {
+  margin-top: 20px;
+  color: hsl(264deg, 44%, 71%);
+  z-index: 10;
+  position: relative;
+}
+
+@media (min-width: 320px) and (max-width: 423px) {
+  .contDaniel {
+    width: 100%;
+    padding: 50px 30px;
+    height: 100%;
+    background: hsl(263deg, 55%, 52%);
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px hsl(217deg, 20%, 63%);
+  }
+  .contDaniel .contDaniel_comillas {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 30px;
+    top: 0px;
+    z-index: 0;
+  }
+  .contDaniel .contDaniel_campoA {
+    width: 220px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contDaniel .contDaniel_campoA .contDaniel_campoA_foto {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid white;
+  }
+  .contDaniel .contDaniel_campoA .contDaniel_campoA_description {
+    width: 150px;
+    z-index: 100;
+  }
+  .contDaniel .contDaniel_campoA .contDaniel_campoA_description .contDaniel_campoA_description_name {
+    color: hsl(0deg, 0%, 81%);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+  }
+  .contDaniel .contDaniel_campoA .contDaniel_campoA_description .contDaniel_campoA_description_desc {
+    color: hsl(264deg, 44%, 71%);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+  }
+  .contDaniel .contDaniel_campoB {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 0px;
+    color: hsl(210deg, 46%, 95%);
+    font-weight: 500;
+    font-size: 27px;
+    z-index: 10;
+    position: relative;
+  }
+  .contDaniel .contDaniel_campoC {
+    margin-top: 20px;
+    color: hsl(264deg, 44%, 71%);
+    z-index: 10;
+    position: relative;
+    font-size: 16px;
+  }
+}
+.contPatrick {
+  width: 100%;
+  padding: 30px;
+  height: 420px;
+  background: hsl(219deg, 29%, 14%);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px hsl(217deg, 20%, 63%);
+}
+.contPatrick .contPatrick_campoA {
+  width: 230px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.contPatrick .contPatrick_campoA .contPatrick_campoA_foto {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid white;
+}
+.contPatrick .contPatrick_campoA .contPatrick_campoA_description {
+  width: 150px;
+}
+.contPatrick .contPatrick_campoA .contPatrick_campoA_description .contPatrick_campoA_description_name {
+  width: 200px;
+  color: hsl(0deg, 0%, 81%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+}
+.contPatrick .contPatrick_campoA .contPatrick_campoA_description .contPatrick_campoA_description_desc {
+  color: hsl(264deg, 44%, 71%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+}
+.contPatrick .contPatrick_campoB {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px 0px;
+  color: hsl(210deg, 46%, 95%);
+  font-weight: 500;
+  font-size: 27px;
+  z-index: 10;
+  position: relative;
+}
+.contPatrick .contPatrick_campoC {
+  margin-top: 20px;
+  color: hsl(264deg, 44%, 71%);
+  z-index: 10;
+  position: relative;
+}
+
+@media (min-width: 320px) and (max-width: 423px) {
+  .contPatrick {
+    width: 100%;
+    padding: 30px;
+    height: 100%;
+    background: hsl(219deg, 29%, 14%);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px hsl(217deg, 20%, 63%);
+  }
+  .contPatrick .contPatrick_campoA {
+    width: 220px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contPatrick .contPatrick_campoA .contPatrick_campoA_foto {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid white;
+  }
+  .contPatrick .contPatrick_campoA .contPatrick_campoA_description {
+    width: 150px;
+  }
+  .contPatrick .contPatrick_campoA .contPatrick_campoA_description .contPatrick_campoA_description_name {
+    width: 200px;
+    color: hsl(0deg, 0%, 81%);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+  }
+  .contPatrick .contPatrick_campoA .contPatrick_campoA_description .contPatrick_campoA_description_desc {
+    color: hsl(264deg, 44%, 71%);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+  }
+  .contPatrick .contPatrick_campoB {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 0px;
+    color: hsl(210deg, 46%, 95%);
+    font-weight: 500;
+    font-size: 27px;
+    z-index: 10;
+    position: relative;
+  }
+  .contPatrick .contPatrick_campoC {
+    margin-top: 20px;
+    color: hsl(264deg, 44%, 71%);
+    z-index: 10;
+    position: relative;
+    font-size: 16px;
+  }
+}
+.contJonatan {
+  width: 100%;
+  padding: 30px;
+  height: 420px;
+  background: hsl(217deg, 19%, 35%);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px hsl(217deg, 20%, 63%);
+}
+.contJonatan .contJonatan_campoA {
+  width: 275px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.contJonatan .contJonatan_campoA .contJonatan_campoA_imagen {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid white;
+}
+.contJonatan .contJonatan_campoA .contJonatan_campoA_description .contJonatan_campoA_description_name {
+  color: hsl(0deg, 0%, 81%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+}
+.contJonatan .contJonatan_campoA .contJonatan_campoA_description .contJonatan_campoA_description_graduate {
+  color: hsl(264deg, 44%, 71%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+}
+.contJonatan .contJonatan_campoB {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px 0px;
+  color: hsl(210deg, 46%, 95%);
+  font-weight: 500;
+  font-size: 27px;
+}
+.contJonatan .contJonatan_campoC {
+  margin-top: 20px;
+  color: hsl(217deg, 20%, 63%);
+  z-index: 10;
+  position: relative;
+}
+
+@media (min-width: 320px) and (max-width: 423px) {
+  .contJonatan {
+    width: 100%;
+    padding: 30px;
+    height: 100%;
+    background: hsl(217deg, 19%, 35%);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px hsl(217deg, 20%, 63%);
+  }
+  .contJonatan .contJonatan_campoA {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contJonatan .contJonatan_campoA .contJonatan_campoA_imagen {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid white;
+  }
+  .contJonatan .contJonatan_campoA .contJonatan_campoA_description .contJonatan_campoA_description_name {
+    color: hsl(0deg, 0%, 81%);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+  }
+  .contJonatan .contJonatan_campoA .contJonatan_campoA_description .contJonatan_campoA_description_graduate {
+    color: hsl(264deg, 44%, 71%);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+  }
+  .contJonatan .contJonatan_campoB {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 0px;
+    color: hsl(210deg, 46%, 95%);
+    font-weight: 500;
+    font-size: 27px;
+  }
+  .contJonatan .contJonatan_campoC {
+    margin-top: 20px;
+    color: hsl(217deg, 20%, 63%);
+    z-index: 10;
+    position: relative;
+    font-size: 16px;
+  }
+}
+.contJanethe {
+  width: 100%;
+  padding: 30px;
+  height: 100%;
+  background: hsl(0deg, 0%, 100%);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px hsl(217deg, 20%, 63%);
+}
+.contJanethe .contJanethe_campoA {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.contJanethe .contJanethe_campoA .contJanethe_campoA_imagen {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid white;
+}
+.contJanethe .contJanethe_campoA .contJanethe_campoA_description .contJanethe_campoA_description_name {
+  color: hsl(217deg, 19%, 35%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+}
+.contJanethe .contJanethe_campoA .contJanethe_campoA_description .contJanethe_campoA_description_graduate {
+  color: hsl(217deg, 20%, 63%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+}
+.contJanethe .contJanethe_campoB {
+  width: 250px;
+  margin-top: 20px;
+  padding: 10px 0px;
+  color: hsl(217deg, 19%, 35%);
+  font-weight: 500;
+  font-size: 27px;
+}
+.contJanethe .contJanethe_campoC {
+  margin-top: 20px;
+  color: hsl(217deg, 20%, 63%);
+  z-index: 10;
+  position: relative;
+  font-size: 16px;
+}
+
+.contKira {
+  width: 100%;
+  padding: 30px;
+  height: 100%;
+  background: hsl(0deg, 0%, 100%);
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px hsl(217deg, 20%, 63%);
+}
+.contKira .contKira_campoA {
+  width: 220px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.contKira .contKira_campoA .contKira_campoA_imagen {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid white;
+}
+.contKira .contKira_campoA .contKira_campoA_description {
+  width: 150px;
+}
+.contKira .contKira_campoA .contKira_campoA_description .contKira_campoA_description_name {
+  color: hsl(217deg, 19%, 35%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+}
+.contKira .contKira_campoA .contKira_campoA_description .contKira_campoA_description_graduate {
+  color: hsl(217deg, 20%, 63%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+}
+.contKira .contKira_campoB {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px 0px;
+  color: hsl(217deg, 19%, 35%);
+  font-weight: 500;
+  font-size: 27px;
+  z-index: 10;
+  position: relative;
+}
+.contKira .contKira_campoC {
+  margin-top: 20px;
+  color: hsl(264deg, 44%, 71%);
+  z-index: 10;
+  position: relative;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=main.css.map */

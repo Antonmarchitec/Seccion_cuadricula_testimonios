@@ -1,0 +1,101 @@
+@import "fontColors";
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;   //500 600
+}
+
+html,body{
+    //scroll-behavior: smooth;
+    font-size: 18px;
+}
+
+.container_base{
+    width: 100%;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color_gray;
+
+    .grid_container{
+        width: 100%;
+        max-width:1440px;
+        //padding: 10px 0px;
+        //background:$color_grid_base;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 1.5em;
+        grid-template-areas: "grid_daniel   grid_daniel   grid_jonhatan   grid_kira"
+                             "grid_jeanette grid_patrick grid_patrick grid_kira"
+                             ;
+        .grid_daniel{
+            //padding: 10px 0px;
+            //background:$color_gray;
+            grid-area: grid_daniel;
+        }
+        .grid_jonhatan{
+            //padding: 10px 0px;
+            //background:$color_gray;
+            grid-area: grid_jonhatan;
+
+        }
+        .grid_kira{
+            //padding: 10px 0px;
+            //background:$color_gray;
+            grid-area:grid_kira;
+        }
+        .grid_jeanette{
+            //padding: 10px 0px;
+            //background:$color_gray;
+            grid-area:grid_jeanette ;
+        }
+        .grid_patrick{
+            //padding: 10px 0px;
+            //background:$color_gray;
+            grid-area: grid_patrick;
+        }
+    }
+
+}
+
+
+
+@media (min-width:320px) and (max-width:423px){
+html,body{
+    font-size: 13px;
+}  
+.container_base{
+    width: 100%;
+    max-width: initial;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color_gray;
+
+    .grid_container{
+        width: 100%;
+        //padding: 10px 0px;
+        //background:green;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 1.8em;
+        grid-template-areas: "grid_daniel     grid_daniel"
+                             "grid_jonhatan   grid_jonhatan"
+                             "grid_jeanette   grid_jeanette"
+                             "grid_patrick    grid_patrick"
+                             "grid_kira       grid_kira"
+                             ;
+       
+    }
+
+}
+
+ 
+}
